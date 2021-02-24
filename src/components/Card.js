@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react-dom';
 import { FaCircle, FaRocket, FaYoutube, FaWikipediaW } from 'react-icons/fa'
 import { IoMdRocket } from 'react-icons/io'
+import { useMediaQuery } from 'react-responsive'
 import './card.css'
 const Card = (props) => {
     const {

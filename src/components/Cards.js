@@ -2,7 +2,12 @@ import React, { useState, useEffect } from 'react'
 import Card from './Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Button, Row, Col } from 'react-bootstrap';
+import { useMediaQuery } from 'react-responsive'
+
+
 const Cards = () => {
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 500px)' })
+const idValue=isTabletOrMobile?"mobile-view":""
     const apiUrl =
         "https://api.spacexdata.com/v3/launches?limit=100";
     const [loaded, setLoaded] = useState(false)
@@ -28,11 +33,11 @@ const Cards = () => {
     else {
         return (
             <div>
-                <Container fluid >
+                <Container fluid id= {idValue }>
                     <Row>
                         {apiData.map((data) => {
                             return (
-                                <Col className='mt-4' md={12} lg={4}>
+                                <Col className='mt-4' md={6} sm={12} lg={4} xl={3}>
                                     <Card data={data} />
                                 </Col>
                             );
