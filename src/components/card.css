@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Revalia&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+.card-wrapper {
+  max-width: 400px;
+  height: 200px;
+  background-color: #1f1f2b;
+  /* background-color: transparent; */
+  color: white;
+  /* border: white solid 1px; */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  position: relative;
+}
+.card-background {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+.flight-num {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 7px 0px 0px 7px;
+}
+.card-icon {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-width: 130px;
+}
+.img-cont {
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  margin-left: 10px;
+  justify-content: center;
+  align-items: center;
+  min-width: 120px;
+  min-height: 120px;
+}
+.card-img {
+  max-width: 100px;
+  max-height: 100px;
+  flex: 1 1 auto;
+}
+
+.card-content {
+  flex: 2 1 auto;
+  width: 100%;
+  height: 100%;
+  margin-left: 15px;
+  font-family: "Lato", cursive;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.icon-link {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+h3,
+.h3 {
+  all: unset;
+  color: white;
+  font-size: 1.25rem !important;
+  font-family: "Lato";
+  font-weight: 300;
+}
